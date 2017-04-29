@@ -7,7 +7,7 @@ JSON = require('dkjson')
 redis = (loadfile "./redis.lua")()
 HTTPS = require('ssl.https')
 ----config----
-local bot_api_key = "285985426:AAEzkoxPQkHCkZNIXp2TA3O4up3Rd-yH8qw" --token
+local bot_api_key = "331749415:AAFyOKY5lZTKRFGcnFM1iPOwSIzkJBBjNl8" --token
 local BASE_URL = "https://api.telegram.org/bot"..bot_api_key
 -------
 
@@ -167,7 +167,7 @@ _من هوش مصنوعی دارم 😅 و هرچی‌ تو بگی‌ رو می�
 من تو خصوصی به همه پیامات جواب میدم ولی تو گروها باید روی پیام هایی که من ارسال میکنم ریپلای کنی تا جوابتو بدم :)
 
 راستی اگه منو تو گروهات اضافه کنی خودم ازتون حرف زدن یاد میگیرم]]
-    text = text.."\n[برای اضافه کردن من تو گروه خودت با دوستات روی این متن آبی کلیک کن و گروه مورد نظرتو انتخاب کن](https://telegram.me/"..botusername.."?startgroup=new)\nقدرت گرفته از [iTeam](https://telegram.me/iTeam_ir)"
+    text = text.."\n[برای اضافه کردن من تو گروه خودت با دوستات روی این متن آبی کلیک کن و گروه مورد نظرتو انتخاب کن](https://telegram.me/"..botusername.."?startgroup=new)\nقدرت گرفته از [morteza](https://telegram.me/morteza4718)"
 	sendMessage(msg.chat.id, text, false, msg.message_id, true)
 	if msg.chat.type == "private" then
 		redis:sadd("CW:users",msg.chat.id)
